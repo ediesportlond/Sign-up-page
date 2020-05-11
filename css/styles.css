@@ -1,0 +1,48 @@
+body{
+    display:flex;
+    font-family: sans-serif;
+}
+#createContainer{
+    border: 1px black solid;
+    padding:20px;
+    margin: 0 auto;
+    box-shadow:3px 3px gray;
+    
+}
+div{
+    float: left;
+    text-align:right;
+    width:303px;
+}
+
+div p{
+    margin-bottom:0;
+}
+
+.required{
+    color:red;
+}
+
+.requirements{
+    color:red;
+    font-weight: bold;
+    font-size: 10pt;
+    width:100%;
+    margin: 10px 0;
+}
+.requirements p{
+    margin: 0;
+}
+button{
+    margin-top:10px;
+}
+#errors{
+    color:red;
+    font-size:10pt;
+    text-align: center;
+}
+#errors p{
+    margin: 0;
+    padding: 0;
+    display:none;
+}

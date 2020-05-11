@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="createContainer">
+            <div>
+                <p class="required">All fields with * are required.</p>
+                <form> 
+                    <label><span class="required">*</span>First Name </label><input type='text' id="firstName"><br><br>
+                    <label><span class="required">*</span>Last Name </label><input type='text' id="lastName"><br><br>
+                    <label><span class="required">*</span>Email </label><input type='text' id="email"><br><br>
+
+                    <p>Password must meet all requirements below:</p>
+                    <div class="requirements">
+                        <p id="length">8 characters</p>
+                        <p id="lower">Lower case letters</p>
+                        <p id="upper">Upper case letters</p>
+                        <p id="number">Number</p>
+                        <p id="symbol">Symbol</p>
+                    </div> 
+
+                    <label><span class="required">*</span>Password </label><input type='password' id="password"><br><br>
+                    <label><span class="required">*</span>Confirm Password </label><input type='password' id="passwordVerify">
+                    <p><input type="checkbox" id="showPassword"> Show password</p>
+                    <button id="submit">Sign up </button>
+                </form>
+                <div id="errors">    
+                    <p id="e1">Enter valid first name.</p>
+                    <p id="e2">Enter valid last name.</p>
+                    <p id="e3">Enter valid email.</p>
+                    <p id="e4">Password does not meet minimum requirements.</p>
+                    <p id="e5">Passwords do not match.</p>
+                    <p id="e6">Password cannot be password.</p>
+                </div>
+            </div>
+        </div>
+	<script src="js/script.js"></script>
+
+    </body>
+</html>
